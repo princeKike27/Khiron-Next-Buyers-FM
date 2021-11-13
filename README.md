@@ -4,9 +4,9 @@ For this project I analyzed data from patients that have been prescribed with FM
 
 Throught the project you will be able to find:
 
-    Data cleaning and standardization.
-    Analysis of relevant features to build the model.
-    Logistic Regression Model for patient classification.
-    Analysis of model's performance.
-    Model testing.
+- Data cleaning and standardization.
+- Analysis of relevant features to build the model.
+- Logistic Regression Model for patient classification.
+- Analysis of model's performance.
+- Model testing.
 
