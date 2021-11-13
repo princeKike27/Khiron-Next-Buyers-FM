@@ -1,6 +1,6 @@
-# Prediction of Next Buyers from patients prescribed with FMs
+# Next Buyers *K* Classifier
 
-For this project I analyzed data from patients that have been prescribed with FMs. I created a Logistic Regression Model that predicts which patients prescribed with FM bought the product, based on features like their sex, age, city, diagnosis and type of product prescribed.
+For this project I analyzed data from patients that have been prescribed with FMs. By using a Logistic Regression Algorithm I created a next-buyer classifier that based on patient features like its age, sex, diagnosis, city and type of product will classify a patient as a buyer or non buyer.
 
 Throught the project you will be able to find:
 
