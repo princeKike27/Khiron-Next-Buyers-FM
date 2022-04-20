@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>K Next Buyer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- FAVICON -->
+		<link rel='icon' type='image/x-icon' href='../static/images/k-logo.png'
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="../static/css/style.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+
+			<div class="inner">
+				<form action="{{url_for('predict')}}" id="patient_form", method='POST'>
+					<h3>Cannabis Buyer Predictor</h3>
+					<p class="heading">Aplicación Web para predecir si un paciente de acuerdo a sus características
+						y habiendo sido prescrito con <em>cannabis medicinal</em>, es un comprador potencial del producto.</p>
+
+
+					<!-- PATIENT GENDER -->
+					<label class="form-group" id="drop_form" for="exam">Genero
+						<select class="form-control" id="uiDrop" name="gender_form" form="patient_form" required>
+							<option value="" disable selected> Seleccione Genero de Paciente </option>
+							<option value="Masculino">Masculino</option>
+							<option value="Femenino">Femenino</option>
+						</select>
+					</label>
+
+					<!-- PATIENT AGE -->
+					<label class="form-group" id="drop_form" for="exam">Edad
+						<select class="form-control" id="uiDrop" name="age_form" form="patient_form" required>
+							<option value="" disable selected> Seleccione Edad de Paciente </option>
+							<option value="0-25">0 a 25 años</option>
+							<option value="25-50">25 a 50 años</option>
+							<option value="51-75">51 a 75 años</option>
+							<option value="76-101">76 a 101 años</option>
+						</select>
+					</label>
+
+					<!-- PATIENT PLAN -->
+					<label class="form-group" id="drop_form" for="exam">Particular / Aseguradora
+						<select class="form-control" id="uiDrop" name="plan_form" form="patient_form" required>
+							<option value="" disable selected> Seleccione Tipo de Plan </option>
+							<option value="particular">Particular</option>
+							<option value="aseguradora">Aseguradora</option>
+						</select>
+					</label>
+
+					<!-- TYPE OF PRODUCT -->
+					<label class="form-group" id="drop_form" for="exam">Tipo Producto
+						<select class="form-control" id="uiDrop" name="product_form" form="patient_form" required>
+							<option value="" disable selected> Seleccione Tipo de Producto </option>
+							<option value="fm001">FM001</option>
+							<option value="fm002">FM002</option>
+							<option value="fm003">FM003</option>
+							<option value="fm004">FM004</option>
+							<option value="fm005">FM005</option>
+						</select>
+					</label>
+
+					<!-- CITY -->
+					<label class="form-group" id="drop_form" for="exam">Ciudad
+						<select class="form-control" id="uiDrop" name="city_form" form="patient_form" required>
+							<option value="" disable selected> Seleccione la Ciudad del Paciente </option>
+							<option value="bogota">Bogotá</option>
+							<option value="medellin">Medellín</option>
+							<option value="mosquera">Mosquera</option>
+							<option value="otra">Otra Ciudad/Municipio</option>
+						</select>
+					</label>
+
+					<!-- PATIENT DIAGNOSTIC -->
+					<label class="form-group" id="drop_form" for="exam">Diagnostico
+						<select class="form-control" id="uiDrop" name="diagnostic_form" form="patient_form" required>
+							<option value="" disable selected> Seleccione el Diagnostico del Paciente </option>
+							<option value="dolor_cronico">Otro Dolor Crónico</option>
+							<option value="anxiedad_depre">Anxiedad/Depresión</option>
+							<option value="dolor_cronico_incu">Dolor Crónico Incurable</option>
+							<option value="otro">Otro</option>
+						</select>
+					</label>
+
+					<!-- PATIENT EXAM TYPE -->
+					<label class="form-group" id="drop_form" for="exam" placeholder="Primera Vez / Control">Primera Vez / Control
+						<select class="form-control" id="uiDrop" name="exam_form" form="patient_form" required>
+							<option value="" disable selected> Seleccione Tipo de Examen </option>
+							<option value="Primera Vez">Primera Vez</option>
+							<option value="Control">Control</option>
+						</select>
+					</label>
+
+
+
+					<!-- BUTTON TO SUBMIT FORM AND PREDICT PRICE -->
+					<button type="submit">Predecir
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+				</form>
+
+				<br></br>
+				<!-- DISPLAY PREDICTIVE PRICE -->
+			 <h3>{{prediction_text}}</h3>
+
+			 <!-- CORP -->
+			 <div class="corp"><h2>&copy; 2022 Kike27</h2></div>
+
+			</div>
+		</div>
+
+
+
+
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
