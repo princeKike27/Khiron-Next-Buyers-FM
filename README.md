@@ -9,4 +9,5 @@ Throught the project you will be able to find:
 - Logistic Regression Model for patient classification.
 - Analysis of model's performance.
 - Model testing.
-
+- Creation of Web App to visualize model - Poland House Price Calculator.
+  - https://k-next-buyers.herokuapp.com/
